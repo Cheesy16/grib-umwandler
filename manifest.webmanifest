@@ -1,0 +1,27 @@
+{
+  "name": "GRIB-Umwandler Vento Cadela",
+  "short_name": "GRIB-Umwandler",
+  "description": "Wandelt GRIB2-Wetterdateien in GRIB1 um, damit SailGrib WR sie importieren kann.",
+  "lang": "de",
+  "id": "./",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#FFFFFF",
+  "theme_color": "#352B28",
+  "icons": [
+    { "src": "icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any maskable" },
+    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" }
+  ],
+  "share_target": {
+    "action": "./share",
+    "method": "POST",
+    "enctype": "multipart/form-data",
+    "params": {
+      "files": [
+        { "name": "grib", "accept": ["*/*", "application/octet-stream", ".grb2", ".grib2", ".grb", ".grib"] }
+      ]
+    }
+  }
+}
