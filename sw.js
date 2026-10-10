@@ -1,5 +1,5 @@
 // Service Worker: macht die App offline nutzbar und nimmt Dateien aus dem Teilen-Menü an
-const VERSION = 'grib-umwandler-v2';
+const VERSION = 'grib-umwandler-v3';
 const SHELL = ['./', './index.html', './manifest.webmanifest', './icon-192.png', './icon-512.png'];
 
 self.addEventListener('install', e => {
